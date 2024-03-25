@@ -45,10 +45,12 @@ export default {
 </script>
 
 <template>
-  <div>
+  <body>
+    
+  
     <Header />
-    <Main /></div>
-
+    <Main />
+  </body>
 </template>
 
 <style lang="scss" >
