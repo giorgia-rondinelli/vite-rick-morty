@@ -1,13 +1,46 @@
 <script >
 import {store} from './data/store'
+import Character from './partials/Character.vue';
+
+export default {
+  components:{
+    Character
+  },
+  data(){
+    return{
+      store
+    }
+  },
+  methods:{
+    log(){
+      console.log(this.store.cardsList)
+      console.log(this.store.cardsList)
+    }
+  },
+  mounted(){
+    this.log()
+    
+  }
+}
+
+
 </script>
 
 <template>
-  <div>Main</div>
+  <div class="container">
+    <div class="row">
+    <Character 
+    v-for="card in this.store.cardsList" :key="card.id"
+    :immagine="card.image"
+    :nome="card.name"
+    :stato="card.status"
+    :specie="card.species"/>
+  </div>
+  </div>
 
 </template>
 
 <style lang="scss" scoped>
 
 
-</style>
+</style>./partials/charac.vue

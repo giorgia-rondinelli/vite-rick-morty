@@ -10,11 +10,13 @@ export default {
 </script>
 
 <template>
-  <div>header</div>
+  <h1 class="container ">Rick & Morty</h1>
 
 </template>
 
 <style lang="scss" scoped>
-
+h1{
+  text-align: center;
+}
 
 </style>
