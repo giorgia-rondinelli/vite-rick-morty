@@ -8,7 +8,9 @@ export const store= reactive({
   cardParams:{
     name:'',
     status:''
+    
   },
+  statusList:[],
 
  
 

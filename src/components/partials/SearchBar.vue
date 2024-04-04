@@ -9,6 +9,9 @@ export default {
       
     }
   },
+  props:{
+    // status:String
+  },
   methods:{
     startSearch(){
       
@@ -35,9 +38,8 @@ export default {
   <div class="">
     <select   v-model="selected" class=""  >
       <option value="">Please select one</option>
-      <option value="alive">Alive</option>
-      <option value="dead">Dead</option>
-      <option value="unknown">Unknown</option>
+      <option v-for="(status,index) in store.statusList" :key="index" :value="status">{{status}}</option>
+     
       
     </select>
   </div>

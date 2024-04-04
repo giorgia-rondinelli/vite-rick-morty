@@ -30,13 +30,14 @@ export default {
   <div class="container">
     <div class="row">
     <Character 
-    v-for="card in this.store.cardsList" :key="card.id"
+    v-for="card in store.cardsList" :key="card.id"
     :immagine="card.image"
     :nome="card.name"
     :stato="card.status"
     :specie="card.species"/>
   </div>
   </div>
+  <div>risultati : {{ store.cardsList.length }}</div>
 
 </template>
 
